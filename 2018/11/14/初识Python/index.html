@@ -86,12 +86,10 @@
 <meta property="og:site_name" content="摸鱼之路">
 <meta property="og:description" content="前言人生苦短，我学Python 正文 Python程序语法元素分析程序的格式框架缩进：一行代码开始前的空白区域，表达程序的格式框架严格明确：缩进是语法的一部分，缩进不正确程序运行错误所属关系：表达代码间包含和层次关系的唯一手段长度一致：程序内一致即可，一般用4个空格或1个TAB   注释：用于提高代码可读性的辅助性文字，不被执行单行注释：以#开头，其后内容为注释&amp;emsp;&amp;emsp;# 这里是单">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="e:/Hexo/source/QQ图片20181114220721.png">
-<meta property="og:updated_time" content="2018-11-14T14:17:15.452Z">
+<meta property="og:updated_time" content="2018-11-14T14:33:59.389Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="初识Python">
 <meta name="twitter:description" content="前言人生苦短，我学Python 正文 Python程序语法元素分析程序的格式框架缩进：一行代码开始前的空白区域，表达程序的格式框架严格明确：缩进是语法的一部分，缩进不正确程序运行错误所属关系：表达代码间包含和层次关系的唯一手段长度一致：程序内一致即可，一般用4个空格或1个TAB   注释：用于提高代码可读性的辅助性文字，不被执行单行注释：以#开头，其后内容为注释&amp;emsp;&amp;emsp;# 这里是单">
-<meta name="twitter:image" content="e:/Hexo/source/QQ图片20181114220721.png">
 
 
 
@@ -320,7 +318,7 @@
 <p>###Python程序的输入输出<br><strong>输入函数input()：从控制台获得用户输入的函数</strong><br>input()函数的使用格式：<br>&emsp;&emsp;&emsp;&emsp;&lt;变量&gt; =input(&lt;提示信息字符串&gt;)<br>用户输入的信息以字符串类型保存在&lt;变量&gt;中  </p>
 <p><strong>输出函数print()：以字符形式向控制台输出结果的函数</strong><br>print()函数的基本使用格式：<br>&emsp;&emsp;&emsp;&emsp;print(&lt;拟输出字符串或字符串变量&gt;)<br>字符串类型的一对引号仅在程序内部使用，输出无引号<br>print()函数的格式化：<br>&emsp;&emsp;&emsp;&emsp;<code>print(&quot;转换后的温度是{:.2f}C&quot;.format(C))</code><br>{ }表示槽，后续变量填充到槽中<br>{:.2f }表示将变量C填充到这个位置时取小数点后2位  </p>
 <p><strong>评估函数eval()：去掉参数最外侧引号并执行余下语句的函数</strong><br>eval()函数的基本使用格式：<br>&emsp;&emsp;&emsp;&emsp;eval(&lt;字符串或字符串变量&gt;)  </p>
-<h3 id="“温度转换”代码实例"><a href="#“温度转换”代码实例" class="headerlink" title="“温度转换”代码实例"></a>“温度转换”代码实例</h3><p><img src="E:\Hexo\source\QQ图片20181114220721.png" alt=""></p>
+<h3 id="“温度转换”代码实例"><a href="#“温度转换”代码实例" class="headerlink" title="“温度转换”代码实例"></a>“温度转换”代码实例</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">#TempConvert.py  </span><br><span class="line">TempStr = input(&quot;请输入带有符号的温度值: &quot;)  </span><br><span class="line">if TempStr[-1] in [&apos;F&apos;, &apos;f&apos;]:  </span><br><span class="line">	C = (eval(TempStr[0:-1]) -32)/1.8    </span><br><span class="line">	print(&quot;转换后的温度是&#123;:.2f&#125;C&quot;.format(C))  </span><br><span class="line">elif TempStr[-1] in [&apos;C&apos;,&apos;c&apos;]:  </span><br><span class="line">	F = 1.8*eval(TempStr[0:-1]) + 32  </span><br><span class="line">	print(&quot;转换后的温度是&#123;:.2f&#125;F&quot;.format(F))  </span><br><span class="line">else:    </span><br><span class="line">	print(&quot;输入格式错误&quot;)</span><br></pre></td></tr></table></figure>
 
       
     </div>
