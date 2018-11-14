@@ -79,16 +79,17 @@
 
 
 
-<meta name="description" content="这是一个利用Hexo搭建的博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="摸鱼之路">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="前言主要是杂七杂八的有关c语言的容易忽略但又比较有用的东西吧\b 是C语言的转义字符之一，其含义为退格(BS)，ascii码值为8。 当输出\b时，其显示效果为光标退后一格。 正文 \b的使用需要注意的是，只是光标退后，并不会删除字符，所以要达到真正的删除效果，还需要再输出一个字符。如果在后退后系统不再输出其它字符，那么需要手动输出一个空白字符来达到删除的作用。比如printf(&amp;quot;\b">
+<meta property="og:type" content="article">
+<meta property="og:title" content="title">
+<meta property="og:url" content="http://yoursite.com/2018/11/14/c/index.html">
 <meta property="og:site_name" content="摸鱼之路">
-<meta property="og:description" content="这是一个利用Hexo搭建的博客">
+<meta property="og:description" content="前言主要是杂七杂八的有关c语言的容易忽略但又比较有用的东西吧\b 是C语言的转义字符之一，其含义为退格(BS)，ascii码值为8。 当输出\b时，其显示效果为光标退后一格。 正文 \b的使用需要注意的是，只是光标退后，并不会删除字符，所以要达到真正的删除效果，还需要再输出一个字符。如果在后退后系统不再输出其它字符，那么需要手动输出一个空白字符来达到删除的作用。比如printf(&amp;quot;\b">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-11-14T12:48:31.965Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="摸鱼之路">
-<meta name="twitter:description" content="这是一个利用Hexo搭建的博客">
+<meta name="twitter:title" content="title">
+<meta name="twitter:description" content="前言主要是杂七杂八的有关c语言的容易忽略但又比较有用的东西吧\b 是C语言的转义字符之一，其含义为退格(BS)，ascii码值为8。 当输出\b时，其显示效果为光标退后一格。 正文 \b的使用需要注意的是，只是光标退后，并不会删除字符，所以要达到真正的删除效果，还需要再输出一个字符。如果在后退后系统不再输出其它字符，那么需要手动输出一个空白字符来达到删除的作用。比如printf(&amp;quot;\b">
 
 
 
@@ -118,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2018/11/14/c/">
 
 
 
 
 
-  <title>摸鱼之路</title>
+  <title>title | 摸鱼之路</title>
   
 
 
@@ -143,8 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -217,9 +217,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -249,9 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/11/14/c/" itemprop="url">title</a></h1>
+          <h1 class="post-title" itemprop="name headline">title</h1>
         
 
         <div class="post-meta">
@@ -301,9 +299,7 @@
       
 
       
-        
-          
-            <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>主要是杂七杂八的有关c语言的容易忽略但又比较有用的东西吧<br>\b 是C语言的转义字符之一，其含义为退格(BS)，ascii码值为8。 当输出\b时，其显示效果为光标退后一格。</p>
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>主要是杂七杂八的有关c语言的容易忽略但又比较有用的东西吧<br>\b 是C语言的转义字符之一，其含义为退格(BS)，ascii码值为8。 当输出\b时，其显示效果为光标退后一格。</p>
 <h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><hr>
 <h2 id="b的使用"><a href="#b的使用" class="headerlink" title="\b的使用"></a>\b的使用</h2><p>需要注意的是，只是光标退后，并不会删除字符，所以要达到真正的删除效果，还需要再输出一个字符。如果在后退后系统不再输出其它字符，那么需要手动输出一个空白字符来达到删除的作用。<br>比如<br><code>printf(&quot;\b &quot;);</code><br>即在\b后马上输出一个空格，原本的最后一个字符就会被空格覆盖，实现删除的效果。<br>另外一个需要注意的点为，\b只能够退格，不能推行，所以如果最后一个字符为换行符，那么是无法实现删除最后一个字符的效果的。 </p>
 <h2 id="处理scanf-对于字符的缓存读取"><a href="#处理scanf-对于字符的缓存读取" class="headerlink" title="处理scanf()对于字符的缓存读取"></a>处理scanf()对于字符的缓存读取</h2><p>c语言中在读取键盘数据时，一般是带缓存的数据输入，需要按回车键才能完成该“行”数据的输入确认。<br>而 scanf（）函数对这个回车确认符并不进行处理，回车符会留在输入缓存区中。<br>因此，在下一个读“字符”操作函数（getchar, scanf(“%c”), gets()等）运行时，会读到这个字符。<br>而在读数值型数据或字符串时，scanf()会从第一个非空白字符（空白字符指：回车，空格，TAB键）开始读取，自动忽略前面的空白字符，而遇到空白字符结束该类型数据的输入。<br>因此，是否一定要在scanf后面跟个 getchar吃回车，要看下一个输入的数据类型是什么，如果是读字符类操作，处理办法有多种方式：</p>
@@ -311,8 +307,6 @@
 <p>二、前面有读数据操作，现在要执行读字符操作，则可用getchar()来吃掉前面的回车确认<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">int i;</span><br><span class="line">char ch;</span><br><span class="line">scanf(&quot;%d&quot;, &amp;i ); //读一个整数，回车确认</span><br><span class="line">getchar(); //先吃掉回车确认符，这两句，效果同下一方法的那一句</span><br><span class="line">ch=getchar(); //这里会等待用户输入一个字符</span><br></pre></td></tr></table></figure></p>
 <p>三、在scanf()书写上做文章，如：读一个数据，以回车确认，则输写成如下格式<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">int i;</span><br><span class="line">char ch;</span><br><span class="line">scanf(&quot;%d%*c&quot;, &amp;i ); //%*c表示读一个字符，并不赋值给任何变量</span><br><span class="line">ch=getchar(); //这里不会读到回车符</span><br></pre></td></tr></table></figure></p>
 
-          
-        
       
     </div>
     
@@ -329,138 +323,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/14/闲谈c语言/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Red">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="摸鱼之路">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/11/14/闲谈c语言/" itemprop="url">title</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-14T20:36:51+08:00">
-                2018-11-14
-              </time>
+              <a href="/2018/11/14/闲谈c语言/" rel="next" title="title">
+                <i class="fa fa-chevron-left"></i> title
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>主要是杂七杂八的有关c语言的容易忽略但又比较有用的东西吧</p>
-<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><hr>
-<h2 id="b的使用"><a href="#b的使用" class="headerlink" title="\b的使用"></a>\b的使用</h2><p>\b 是C语言的转义字符之一，其含义为退格(BS)，ascii码值为8。 当输出\b时，其显示效果为光标退后一格。<br>需要注意的是，只是光标退后，并不会删除字符，所以要达到真正的删除效果，还需要再输出一个字符。如果在后退后系统不再输出其它字符，那么需要手动输出一个空白字符来达到删除的作用。<br>比如<br><code>printf(&quot;\b &quot;);</code><br>即在\b后马上输出一个空格，原本的最后一个字符就会被空格覆盖，实现删除的效果。<br>另外一个需要注意的点为，\b只能够退格，不能推行，所以如果最后一个字符为换行符，那么是无法实现删除最后一个字符的效果的。 </p>
-<h2 id="处理scanf-对于字符的缓存读取"><a href="#处理scanf-对于字符的缓存读取" class="headerlink" title="处理scanf()对于字符的缓存读取"></a>处理scanf()对于字符的缓存读取</h2><p>c语言中在读取键盘数据时，一般是带缓存的数据输入，需要按回车键才能完成该“行”数据的输入确认。<br>而 scanf（）函数对这个回车确认符并不进行处理，回车符会留在输入缓存区中。<br>因此，在下一个读“字符”操作函数（getchar, scanf(“%c”), gets()等）运行时，会读到这个字符。<br>而在读数值型数据或字符串时，scanf()会从第一个非空白字符（空白字符指：回车，空格，TAB键）开始读取，自动忽略前面的空白字符，而遇到空白字符结束该类型数据的输入。<br>因此，是否一定要在scanf后面跟个 getchar吃回车，要看下一个输入的数据类型是什么，如果是读字符类操作，处理办法有多种方式：</p>
-<p>一、用fflush(stdin)命令强行刷新输入缓存，丢弃输入缓存中的数据，此种方法在windows下使用有效，linux无效。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">char ch;</span><br><span class="line">fflush(stdin); //不管缓存中有没有数据，强行清除</span><br><span class="line">ch=getchar(); //这里会等待用户输入一个字符</span><br></pre></td></tr></table></figure></p>
-<p>二、前面有读数据操作，现在要执行读字符操作，则可用getchar()来吃掉前面的回车确认<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">int i;</span><br><span class="line">char ch;</span><br><span class="line">scanf(&quot;%d&quot;, &amp;i ); //读一个整数，回车确认</span><br><span class="line">getchar(); //先吃掉回车确认符，这两句，效果同下一方法的那一句</span><br><span class="line">ch=getchar(); //这里会等待用户输入一个字符</span><br></pre></td></tr></table></figure></p>
-<p>三、在scanf()书写上做文章，如：读一个数据，以回车确认，则输写成如下格式<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">int i;</span><br><span class="line">char ch;</span><br><span class="line">scanf(&quot;%d%*c&quot;, &amp;i ); //%*c表示读一个字符，并不赋值给任何变量</span><br><span class="line">ch=getchar(); //这里不会读到回车符</span><br></pre></td></tr></table></figure></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -470,10 +354,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -481,6 +366,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -501,8 +390,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -544,6 +442,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#正文"><span class="nav-number">2.</span> <span class="nav-text">正文</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#b的使用"><span class="nav-number">2.1.</span> <span class="nav-text">\b的使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#处理scanf-对于字符的缓存读取"><span class="nav-number">2.2.</span> <span class="nav-text">处理scanf()对于字符的缓存读取</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -677,6 +591,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
